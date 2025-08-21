@@ -571,7 +571,7 @@
       { q: "Flail chest main danger?", a: "Paradoxical movement impairs ventilation." },
       { q: "Open pneumothorax initial management?", a: "3-sided occlusive dressing." },
       { q: "Tension pneumothorax signs?", a: "Severe resp distress, tracheal deviation, absent breath sounds one side, hypotension." },
-      { q: "Needle decompression site?", options: ["Anywhere on the chest.", "2nd ICS midclavicular or 5th ICS mid-axillary (14g cannula).", "Abdomen.", "Leg."], correctAnswerIndex: 1 },
+      { question: "Needle decompression site?", options: ["Anywhere on the chest.", "2nd ICS midclavicular or 5th ICS mid-axillary (14g cannula).", "Abdomen.", "Leg."], correctAnswerIndex: 1 },
       { question: "Massive haemothorax definition?", options: ["Small amount of blood in chest.", ">1500ml blood in pleural space.", "Blood in abdomen.", "Blood in airway."], correctAnswerIndex: 1 },
       { question: "Beck’s triad (tamponade)?", options: ["Hypotension, muffled heart sounds, JVP distension.", "Hypertension, clear heart sounds, no JVP.", "Tachycardia, chest pain, normal ECG.", "Fever, cough, shortness of breath."], correctAnswerIndex: 0 },
       { question: "Pelvic fracture initial management?", options: ["Leg splint.", "Pelvic binder (over greater trochanters).", "Arm sling.", "Only pain relief."], correctAnswerIndex: 1 },
@@ -836,53 +836,58 @@
     const traumaFlashContainer = document.getElementById('trauma-flashcard-container');
 
     // Reusable function to render a flashcard
-    function renderFlashcard(cardsArray, currentIndex, containerId) {
-      const card = cardsArray[currentIndex];
+    function renderFlashcard(cardsArray, currentCardIndex, containerId) {
+      const card = cardsArray[currentCardIndex];
       const container = document.getElementById(containerId);
-      let isFlipped = false; // Check the correct flipped state for the current container
 
+      // Determine if the card should be flipped based on its global state
+      let shouldBeFlipped = false;
       if (containerId === 'general-flashcard-container') {
-        isFlipped = isGeneralCardFlipped;
+        shouldBeFlipped = isGeneralCardFlipped;
       } else if (containerId === 'trauma-flashcard-container') {
-        isFlipped = isTraumaCardFlipped;
+        shouldBeFlipped = isTraumaCardFlipped;
       }
 
       container.innerHTML = `
-        <div class='flashcard ${isFlipped ? 'flipped' : ''}'>
+        <div class='flashcard ${shouldBeFlipped ? 'flipped' : ''}'>
           <div class='flashcard-inner' role='button' tabindex='0' aria-pressed='false' aria-label='Flip card'>
             <div class='card-face front'><strong>Q:</strong> ${card.q}</div>
             <div class='card-face back'><strong>A:</strong> ${card.a}</div>
           </div>
         </div>`;
 
-      // Attach click listener for flipping
-      container.querySelector('.flashcard').onclick = () => {
-        if (containerId === 'general-flashcard-container') {
-          isGeneralCardFlipped = !isGeneralCardFlipped;
-        } else if (containerId === 'trauma-flashcard-container') {
-          isTraumaCardFlipped = !isTraumaCardFlipped;
-        }
-        // Re-render to apply flip class
-        renderFlashcard(cardsArray, currentIndex, containerId);
-      };
-
-      // Attach keypress listener for accessibility
-      container.querySelector('.flashcard').onkeypress = (e) => {
-        if (e.key === ' ' || e.key === 'Enter') {
-          e.preventDefault();
+      // Event listeners need to be re-attached because innerHTML overwrites them
+      const currentFlashcardElement = container.querySelector('.flashcard');
+      if (currentFlashcardElement) {
+        currentFlashcardElement.onclick = () => {
           if (containerId === 'general-flashcard-container') {
             isGeneralCardFlipped = !isGeneralCardFlipped;
           } else if (containerId === 'trauma-flashcard-container') {
             isTraumaCardFlipped = !isTraumaCardFlipped;
           }
-          renderFlashcard(cardsArray, currentIndex, containerId);
-        }
-      };
+          // Re-render the specific card to update its flipped state visually
+          renderFlashcard(cardsArray, currentCardIndex, containerId);
+        };
+
+        currentFlashcardElement.onkeypress = (e) => {
+          if (e.key === ' ' || e.key === 'Enter') {
+            e.preventDefault();
+            if (containerId === 'general-flashcard-container') {
+              isGeneralCardFlipped = !isGeneralCardFlipped;
+            } else if (containerId === 'trauma-flashcard-container') {
+              isTraumaCardFlipped = !isTraumaCardFlipped;
+            }
+            renderFlashcard(cardsArray, currentCardIndex, containerId);
+          }
+        };
+      }
     }
 
-    // Initial render for both flashcard sets
-    renderFlashcard(generalFlashcards, generalFlashIndex, 'general-flashcard-container');
-    renderFlashcard(traumaFlashcards, traumaFlashIndex, 'trauma-flashcard-container');
+    // Initial render for both flashcard sets when the DOM is ready
+    document.addEventListener('DOMContentLoaded', () => {
+        renderFlashcard(generalFlashcards, generalFlashIndex, 'general-flashcard-container');
+        renderFlashcard(traumaFlashcards, traumaFlashIndex, 'trauma-flashcard-container');
+    });
 
 
     // General Flashcards Controls
@@ -909,4 +914,3 @@
   </script>
 </body>
 </html>
-
