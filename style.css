@@ -1,1 +1,311 @@
+/* Base Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: black;
+  color: orange;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.hidden {
+  display: none !important;
+}
+.container {
+  max-width: 1000px;
+  width: 92%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: grey;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); /* Added shadow for consistency */
+}
 
+/* Headings */
+h1, h2, h3 {
+  text-align: center;
+  color: orange;
+  margin-bottom: 10px; /* Added margin for consistency */
+}
+h1 { font-size: 2.2em; }
+h2 { font-size: 1.3em; margin-top: 0; }
+
+/* Buttons */
+.btn {
+  padding: 12px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow for consistency */
+}
+.btn:hover {
+  background-color: #d17a00;
+  transform: translateY(-2px); /* Added hover effect */
+}
+.btn:active {
+  transform: translateY(0); /* Added active effect */
+}
+.disclaimer-btn {
+  background-color: grey;
+  color: black;
+  margin-top: 20px;
+  display: block; /* Ensure it takes full width if needed */
+  width: 100%; /* Ensure it takes full width if needed */
+}
+.disclaimer-btn:hover {
+  background-color: #5a5a5a;
+}
+.back-btn {
+  margin-bottom: 20px;
+  display: inline-block;
+  align-self: flex-start;
+  background-color: orange;
+  color: white;
+}
+.back-btn:hover {
+  background-color: #d17a00;
+}
+
+
+/* Top Bar */
+.topbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 56px;
+  padding: 0 16px;
+  background: rgba(0,0,0,0.85);
+  z-index: 1001; /* Ensure topbar is always on top */
+  border-bottom: 1px solid rgba(255,165,0,0.25); /* Added border */
+}
+.brand {
+  font-weight: 800;
+  color: orange;
+  letter-spacing: 0.2px; /* Added for consistency */
+}
+.burger {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  background: #1a1a1a;
+  border: 1px solid orange;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.burger span { /* The middle bar */
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: orange;
+  position: relative;
+}
+.burger span::before,
+.burger span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: orange;
+}
+.burger span::before { top: -6px; }
+.burger span::after { top: 6px; }
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  background: #111;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease; /* Smooth slide-out */
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 1000; /* Sidebar should be below topbar but above overlay */
+  border-right: 1px solid rgba(255,165,0,0.25); /* Added border */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35); /* Added shadow */
+}
+.sidebar.open {
+  transform: translateX(0);
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  z-index: 999; /* Overlay below sidebar */
+}
+.overlay.show {
+  display: block;
+}
+.nav-label {
+  color: #ffbb55;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 6px 8px; /* Added for consistency */
+}
+.nav-btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  background: #222;
+  color: orange;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: left;
+  cursor: pointer; /* Added for consistency */
+  transition: background-color 0.2s ease; /* Added transition */
+}
+.nav-btn:hover {
+  background-color: #333; /* Darker hover for nav buttons */
+}
+
+
+/* Quiz specific styling */
+.exam-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+.question-container {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: orange;
+  text-align: center;
+}
+.question-text {
+  font-size: 20px;
+  color: black;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+}
+.option-button {
+  padding: 12px;
+  border: 2px solid orange;
+  border-radius: 8px;
+  background: #f9f9f9;
+  cursor: pointer;
+  text-align: left;
+  color: black; /* Explicitly set text color for options */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Added transitions */
+}
+.option-button:hover:not([disabled]) {
+  background-color: #ffd9a8; /* Lighter orange on hover */
+  border-color: #c0c0c0;
+}
+.option-button.correct {
+  background: #d4edda; /* Green */
+  color: #155724;
+  border-color: #c3e6cb;
+}
+.option-button.wrong {
+  background: #f8d7da; /* Red */
+  color: #721c24;
+  border-color: #f5c6cb;
+}
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #e9ecef;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.progress-bar-inner {
+  height: 100%;
+  width: 0;
+  background: orange;
+  transition: width 0.4s ease;
+}
+
+/* Results Page */
+.results-summary {
+  text-align: center;
+  margin-top: 20px;
+}
+.results-summary h2 {
+  font-size: 28px;
+  color: orange;
+  margin-bottom: 10px;
+}
+.results-summary p {
+  font-size: 22px;
+  color: black;
+  margin-bottom: 30px;
+}
+.results-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.results-actions button {
+  width: 100%;
+}
+
+
+/* Flashcards */
+.flashcard {
+  perspective: 1200px;
+  width: 100%;
+  height: 220px;
+  margin: auto;
+  cursor: pointer; /* Indicate it's clickable */
+}
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  border: 2px solid orange;
+  border-radius: 12px;
+  background: #1a1a1a;
+  color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.flashcard.flipped .flashcard-inner {
+  transform: rotateY(180deg);
+}
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hide back of card when front is shown */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.card-face.back {
+  transform: rotateY(180deg);
+  background: #111; /* Slightly different background for the back */
+}
+.flashcard-controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  }
