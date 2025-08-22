@@ -142,7 +142,108 @@ const traumaFlashcards = [
   { q: "Internal factor in wound formation?", a: "Diabetes." },
   { q: "External factor in wound formation?", a: "Microorganisms." },
   { q: "Advanced intervention bleeding/wounds?", a: "Tranexamic Acid (TXA)." },
-  { q: "Long bone fracture bleeding?", a: "Up to 2000ml."不斷
+  { q: "Long bone fracture bleeding?", a: "Up to 2000ml." },
+  { q: "Pelvic binder placement?", a: "Over greater trochanter." },
+  { q: "Permissive Hypotension not allowed when?", a: "Isolated head injuries." },
+  { q: "Why maintain consciousness & radial pulse?", a: "Ensure organ perfusion." },
+  { q: "Function of traction splint femur?", a: "Reduce fracture + control bleeding." },
+  { q: "Complication of bleeding/wounds?", a: "Fat embolism." },
+  { q: "Secondary Intention healing?", a: "Wound left open, tissue grows from base." },
+  { q: "Why keep trauma pts warm?", a: "Prevent hypothermia impairing clotting." },
+  { q: "Scrape/graze wound type?", a: "Abrasion." },
+  { q: "Definition of Thermal Injury?", a: "Energy transferred from heat source causing tissue damage." },
+  { q: "Not type of thermal injury?", a: "Radiation poisoning." },
+  { q: "Burn zone with necrosis?", a: "Zone of Coagulation." },
+  { q: "Burn zone care-dependent outcome?", a: "Zone of Stasis." },
+  { q: "Burn capillary permeability?", a: "Increases." },
+  { q: "Best for children burn size?", a: "Lund & Browder chart." },
+  { q: "Palm (with fingers) = what % TBSA?", a: "≈1%." },
+  { q: "Superficial burn layer?", a: "Epidermis only." },
+  { q: "Redness + clear blisters burn type?", a: "Superficial partial thickness (2nd degree)." },
+  { q: "Full thickness burn look?", a: "Stiff, white/brown, often painless." },
+  { q: "Child burn referral > what % TBSA?", a: ">2%." },
+  { q: "Burns always referred?", a: "All deep dermal & full thickness burns." },
+  { q: "Cool burn how long?", a: "20 minutes tepid water." },
+  { q: "Why not ice burns?", a: "Causes hypothermia & tissue damage." },
+  { q: "Material to cover burn?", a: "Cling film (transparent, non-adherent, applied in layers not circumferentially)." },
+  { q: "When give high-flow O₂ in burns?", a: "If inhalation injury suspected." },
+  { q: "Inhalation injury signs?", a: "Soot in mouth/nose, singed nasal hairs, hoarseness, stridor, burns around face/neck." },
+  { q: "Best indicator of airway burn severity?", a: "Progressive hoarseness/stridor." },
+  { q: "Carbon monoxide poisoning suspect when?", a: "Patient from enclosed fire with headache, confusion, cherry-red skin." },
+  { q: "What does COHb do?", a: "Binds Hb stronger than O₂ → hypoxia." },
+  { q: "Management priority CO poisoning?", a: "High-flow O₂ (100%) non-rebreather mask." },
+  { q: "Electrical burn danger?", a: "Deep tissue damage, arrhythmias." },
+  { q: "Management electrical injury?", a: "Scene safety (switch off power), ECG monitoring, treat burns as thermal." },
+  { q: "Chemical burn initial management?", a: "Brush off dry chemical, irrigate copiously with water." },
+  { q: "Why not neutralise acid/alkali burns?", a: "Causes exothermic reaction and worsens injury." },
+  { q: "Primary blast injury affects?", a: "Air-filled organs (ears, lungs, GI tract)." },
+  { q: "Secondary blast injury caused by?", a: "Flying debris/shrapnel." },
+  { q: "Tertiary blast injury caused by?", a: "Patient being thrown (blunt trauma)." },
+  { q: "Quaternary blast injury?", a: "Burns, crush, inhalation, toxic exposure." },
+  { q: "Crush syndrome definition?", a: "Systemic effects of muscle crush releasing toxins (myoglobin, K+)." },
+  { q: "Main electrolyte disturbance crush syndrome?", a: "Hyperkalaemia." },
+  { q: "First sign of compartment syndrome?", a: "Pain out of proportion to injury." },
+  { q: "5 Ps of compartment syndrome?", a: "Pain, Pallor, Pulselessness, Paraesthesia, Paralysis." },
+  { q: "Spinal shock definition?", a: "Temporary loss of function/reflexes below injury (flaccid, areflexia)." },
+  { q: "Neurogenic shock cause?", a: "Loss of sympathetic tone (SCI above T6)." },
+  { q: "Neurogenic shock signs?", a: "Hypotension, bradycardia, warm dry skin below injury." },
+  { q: "Flail chest definition?", a: "≥2 adjacent ribs fractured in ≥2 places creating a free segment." },
+  { q: "Flail chest main danger?", a: "Paradoxical movement impairs ventilation." },
+  { q: "Open pneumothorax initial management?", a: "3-sided occlusive dressing." },
+  { q: "Tension pneumothorax signs?", a: "Severe resp distress, tracheal deviation, absent breath sounds one side, hypotension." },
+  { q: "Needle decompression site?", a: "2nd ICS midclavicular or 5th ICS mid-axillary (14g cannula)." },
+  { q: "Massive haemothorax definition?", a: ">1500ml blood in pleural space." },
+  { q: "Beck’s triad (tamponade)?", a: "Hypotension, muffled heart sounds, JVP distension." },
+  { q: "Pelvic fracture initial management?", a: "Pelvic binder (over greater trochanters)." },
+  { q: "FAST scan used for?", a: "Detect free fluid (bleeding) in abdomen." },
+  { q: "Golden Hour trauma?", a: "First 60 minutes where rapid intervention improves survival." }
+]
+}];
+
+// General Flashcards Data
+const generalFlashcards = [
+  { q: "What is trauma?", a: "Physiological/structural change from energy transfer." },
+  { q: "Major trauma definition?", a: "Life-threatening or life-changing injury." },
+  { q: "MOI stands for?", a: "Mechanism of Injury." }
+];
+
+// Trauma Flashcards Data (Full Set)
+const traumaFlashcards = [
+  { q: "What is the definition of 'Trauma'?", a: "Acute physiological/structural change when external energy > body’s ability to cope." },
+  { q: "How is 'Major Trauma' defined?", a: "Life-threatening and could be life-changing with long-term disability." },
+  { q: "Leading causes of trauma?", a: "RTCs, falls in >75s, work-related accidents. NOT sports injuries in children." },
+  { q: "What is MOI concerned with?", a: "Sum of all physical forces and transfer of energy causing injury." },
+  { q: "Term for 'study of relationship between motion and forces'?", a: "Kinetics." },
+  { q: "What is 'Energy Transfer'?", a: "Energy relocated from one system to another (heat, work, mass transfer)." },
+  { q: "Why is MOI important?", a: "Helps predict extent/internal injuries, destination, immobilisation." },
+  { q: "What is Blunt Trauma?", a: "Usually serious injury caused by blunt object/surface (e.g. RTC, fall)." },
+  { q: "Example of Penetrating Trauma?", a: "Gunshot wound." },
+  { q: "Primary purpose of inclusive trauma system?", a: "Ensure patients go to most suitable hospital for injuries." },
+  { q: "Trauma network hospital category?", a: "Local Emergency Hospitals (plus MTCs & Trauma Units)." },
+  { q: "Why multi-disciplinary working?", a: "Share resources, manage scene, safety, comms, optimal care." },
+  { q: "What does 'S' in SCENE stand for?", a: "Safety (dynamic risk assessment, PPE)." },
+  { q: "Primary survey goal?", a: "Identify & address immediate threats to life." },
+  { q: "First step in CA<C>BCDE?", a: "Catastrophic Haemorrhage." },
+  { q: "Most rapid cause of death in trauma?", a: "Catastrophic Haemorrhage." },
+  { q: "Airway maneuver in suspected C-spine?", a: "Jaw thrust." },
+  { q: "'B' in CA<C>BCDE?", a: "Breathing." },
+  { q: "Not part of 'blood on floor +4 more'?", a: "Minor superficial lacerations." },
+  { q: "Lethal Triad of Trauma?", a: "Coagulopathy, Hypothermia, Acidosis." },
+  { q: "When start secondary survey?", a: "After life-threatening issues in primary survey addressed." },
+  { q: "Head-to-toe mnemonic?", a: "DCAP-BTLS." },
+  { q: "'M' in ATMIST?", a: "Mechanism of injury." },
+  { q: "Definition of Bleeding?", a: "Escape of blood from closed cardiovascular system." },
+  { q: "Catastrophic Haemorrhage?", a: "Bleeding likely to cause death in minutes." },
+  { q: "Arterial bleeding look?", a: "Bright red, spurting." },
+  { q: "Outermost skin layer?", a: "Epidermis." },
+  { q: "Definition of Wound?", a: "Laceration/break in skin or mucous membrane with tissue damage." },
+  { q: "Bruise type of wound?", a: "Contusion." },
+  { q: "Common fracture <10yrs?", a: "Greenstick fracture." },
+  { q: "Stage of healing with clot?", a: "Bleeding phase." },
+  { q: "Internal factor in wound formation?", a: "Diabetes." },
+  { q: "External factor in wound formation?", a: "Microorganisms." },
+  { q: "Advanced intervention bleeding/wounds?", a: "Tranexamic Acid (TXA)." },
+  { q: "Long bone fracture bleeding?", a: "Up to 2000ml." },
   { q: "Pelvic binder placement?", a: "Over greater trochanter." },
   { q: "Permissive Hypotension not allowed when?", a: "Isolated head injuries." },
   { q: "Why maintain consciousness & radial pulse?", a: "Ensure organ perfusion." },
@@ -200,47 +301,59 @@ const traumaFlashcards = [
 ];
 
 // --- Sidebar & Navigation Logic ---
-const burger = document.getElementById('burger');
-const sidebar = document.getElementById('sidebar');
-const overlay = document.getElementById('overlay');
+// Get elements after DOM is loaded
+let burger, sidebar, overlay;
+let navButtons;
 
-burger.addEventListener('click', () => {
-  sidebar.classList.toggle('open');
-  overlay.classList.toggle('show');
-});
+function setupNavigation() {
+    burger = document.getElementById('burger');
+    sidebar = document.getElementById('sidebar');
+    overlay = document.getElementById('overlay');
+    navButtons = document.querySelectorAll('.nav-btn');
 
-overlay.addEventListener('click', () => {
-  sidebar.classList.remove('open');
-  overlay.classList.remove('show');
-});
+    if (burger) {
+        burger.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+            overlay.classList.toggle('show');
+        });
+    }
+    if (overlay) {
+        overlay.addEventListener('click', () => {
+            sidebar.classList.remove('open');
+            overlay.classList.remove('show');
+        });
+    }
 
-// Helper to show/hide sections
-function showSection(id) {
-  document.querySelectorAll('section').forEach(s => s.classList.add('hidden'));
-  document.getElementById(id).classList.remove('hidden');
-  sidebar.classList.remove('open');
-  overlay.classList.remove('show');
-}
+    // Helper to show/hide sections
+    function showSection(id) {
+        document.querySelectorAll('section').forEach(s => s.classList.add('hidden'));
+        const targetSection = document.getElementById(id);
+        if (targetSection) {
+            targetSection.classList.remove('hidden');
+        }
+        sidebar.classList.remove('open');
+        overlay.classList.remove('show');
+    }
 
-// Attach event listeners to navigation buttons
-document.querySelectorAll('.nav-btn').forEach(btn =>
-  btn.addEventListener('click', () => {
-    showSection(btn.dataset.target);
-    // Reset flashcard state when switching sections
-    isGeneralCardFlipped = false;
-    renderFlashcard(generalFlashcards, generalFlashIndex, 'general-flashcard-container');
-    isTraumaCardFlipped = false;
-    renderFlashcard(traumaFlashcards, traumaFlashIndex, 'trauma-flashcard-container');
-  })
-);
+    // Attach event listeners to navigation buttons
+    navButtons.forEach(btn =>
+        btn.addEventListener('click', () => {
+            showSection(btn.dataset.target);
+            // Reset flashcard state when switching sections
+            isGeneralCardFlipped = false;
+            if (generalFlashcards.length > 0) {
+                renderFlashcard(generalFlashcards, generalFlashIndex, 'general-flashcard-container');
+            }
+            isTraumaCardFlipped = false;
+            if (traumaFlashcards.length > 0) {
+                renderFlashcard(traumaFlashcards, traumaFlashIndex, 'trauma-flashcard-container');
+            }
+        })
+    );
 
-// Set initial section to Exams
-// Using DOMContentLoaded to ensure elements are available
-document.addEventListener('DOMContentLoaded', () => {
+    // Set initial section to Exams
     showSection('exams-section');
-    renderFlashcard(generalFlashcards, generalFlashIndex, 'general-flashcard-container');
-    renderFlashcard(traumaFlashcards, traumaFlashIndex, 'trauma-flashcard-container');
-});
+}
 
 
 // --- Quiz Logic ---
@@ -249,22 +362,50 @@ let currentIndex = 0;
 let score = 0;
 let selectedOptionIndex = null; // To keep track of the user's selected option
 
-const examButtons = document.getElementById('exam-buttons');
-const quizApp = document.getElementById('quiz-app');
-const resultsPage = document.getElementById('results-page');
-const questionEl = document.getElementById('question');
-const optionsEl = document.getElementById('options');
-const progressBarInner = document.getElementById('progress-bar-inner');
-const finalScoreEl = document.getElementById('final-score');
+// Get quiz elements after DOM is loaded
+let examButtons, quizApp, resultsPage, questionEl, optionsEl, progressBarInner, finalScoreEl;
+let backBtn, retakeQuizBtn, returnToContentsBtn;
 
-// Dynamically create exam buttons
-exams.forEach((exam) => {
-  const b = document.createElement('button');
-  b.className = 'btn';
-  b.textContent = exam.title;
-  b.onclick = () => startExam(exam);
-  examButtons.appendChild(b);
-});
+function setupQuiz() {
+    examButtons = document.getElementById('exam-buttons');
+    quizApp = document.getElementById('quiz-app');
+    resultsPage = document.getElementById('results-page');
+    questionEl = document.getElementById('question');
+    optionsEl = document.getElementById('options');
+    progressBarInner = document.getElementById('progress-bar-inner');
+    finalScoreEl = document.getElementById('final-score');
+    backBtn = document.getElementById('back-btn');
+    retakeQuizBtn = document.getElementById('retake-quiz-btn');
+    returnToContentsBtn = document.getElementById('return-to-contents-btn');
+
+
+    // Dynamically create exam buttons
+    exams.forEach((exam) => {
+      const b = document.createElement('button');
+      b.className = 'btn';
+      b.textContent = exam.title;
+      b.onclick = () => startExam(exam);
+      if (examButtons) {
+        examButtons.appendChild(b);
+      }
+    });
+
+    if (backBtn) backBtn.onclick = () => {
+      quizApp.classList.add('hidden');
+      document.getElementById('exams-section').classList.remove('hidden');
+      if (progressBarInner) progressBarInner.style.width = '0%'; // Reset progress
+    };
+    if (retakeQuizBtn) retakeQuizBtn.onclick = () => {
+      startExam(currentExam); // Restart the current exam
+      if (resultsPage) resultsPage.classList.add('hidden');
+    };
+    if (returnToContentsBtn) returnToContentsBtn.onclick = () => {
+      if (resultsPage) resultsPage.classList.add('hidden');
+      document.getElementById('exams-section').classList.remove('hidden');
+      currentExam = null; // Clear selected exam
+      if (progressBarInner) progressBarInner.style.width = '0%'; // Reset progress
+    };
+}
 
 function startExam(exam) {
   currentExam = exam;
@@ -272,12 +413,14 @@ function startExam(exam) {
   score = 0;
   selectedOptionIndex = null;
   document.getElementById('exams-section').classList.add('hidden');
-  resultsPage.classList.add('hidden'); // Hide results if coming from there
-  quizApp.classList.remove('hidden');
+  if (resultsPage) resultsPage.classList.add('hidden'); // Hide results if coming from there
+  if (quizApp) quizApp.classList.remove('hidden');
   renderQuestion();
 }
 
 function renderQuestion() {
+  if (!currentExam || !questionEl || !optionsEl || !progressBarInner) return;
+
   const q = currentExam.questions[currentIndex];
   const totalQuestions = currentExam.questions.length;
 
@@ -298,7 +441,7 @@ function renderQuestion() {
 }
 
 function checkAnswer(indexSelected) {
-  if (selectedOptionIndex !== null) return; // Prevent multiple clicks
+  if (selectedOptionIndex !== null || !currentExam || !optionsEl) return; // Prevent multiple clicks
   selectedOptionIndex = indexSelected;
 
   const q = currentExam.questions[currentIndex];
@@ -329,42 +472,81 @@ function checkAnswer(indexSelected) {
 }
 
 function showResults() {
+  if (!quizApp || !resultsPage || !finalScoreEl || !progressBarInner) return;
+
   quizApp.classList.add('hidden');
   resultsPage.classList.remove('hidden');
   finalScoreEl.textContent = `You scored ${score} / ${currentExam.questions.length}!`;
   progressBarInner.style.width = '100%'; // Complete progress bar
 }
 
-// Quiz Controls
-document.getElementById('back-btn').onclick = () => {
-  quizApp.classList.add('hidden');
-  document.getElementById('exams-section').classList.remove('hidden');
-  progressBarInner.style.width = '0%'; // Reset progress
-};
-document.getElementById('retake-quiz-btn').onclick = () => {
-  startExam(currentExam); // Restart the current exam
-};
-document.getElementById('return-to-contents-btn').onclick = () => {
-  resultsPage.classList.add('hidden');
-  document.getElementById('exams-section').classList.remove('hidden');
-  currentExam = null; // Clear selected exam
-  progressBarInner.style.width = '0%'; // Reset progress
-};
-
 
 // --- Flashcards Logic ---
 let generalFlashIndex = 0;
 let isGeneralCardFlipped = false;
-const generalFlashContainer = document.getElementById('general-flashcard-container');
+let generalFlashContainer;
 
 let traumaFlashIndex = 0;
 let isTraumaCardFlipped = false;
-const traumaFlashContainer = document.getElementById('trauma-flashcard-container');
+let traumaFlashContainer;
+
+let generalFlipBtn, generalNextBtn, traumaFlipBtn, traumaNextBtn;
+
+function setupFlashcards() {
+    generalFlashContainer = document.getElementById('general-flashcard-container');
+    traumaFlashContainer = document.getElementById('trauma-flashcard-container');
+
+    generalFlipBtn = document.getElementById('general-flip-btn');
+    generalNextBtn = document.getElementById('general-next-btn');
+    traumaFlipBtn = document.getElementById('trauma-flip-btn');
+    traumaNextBtn = document.getElementById('trauma-next-btn');
+
+    // Initial render for both flashcard sets
+    if (generalFlashcards.length > 0) {
+        renderFlashcard(generalFlashcards, generalFlashIndex, 'general-flashcard-container');
+    }
+    if (traumaFlashcards.length > 0) {
+        renderFlashcard(traumaFlashcards, traumaFlashIndex, 'trauma-flashcard-container');
+    }
+
+    // General Flashcards Controls
+    if (generalFlipBtn) generalFlipBtn.onclick = () => {
+      isGeneralCardFlipped = !isGeneralCardFlipped;
+      if (generalFlashcards.length > 0) {
+        renderFlashcard(generalFlashcards, generalFlashIndex, 'general-flashcard-container');
+      }
+    };
+    if (generalNextBtn) generalNextBtn.onclick = () => {
+      generalFlashIndex = (generalFlashIndex + 1) % generalFlashcards.length;
+      isGeneralCardFlipped = false; // Flip back to front for next card
+      if (generalFlashcards.length > 0) {
+        renderFlashcard(generalFlashcards, generalFlashIndex, 'general-flashcard-container');
+      }
+    };
+
+    // Trauma Flashcards Controls
+    if (traumaFlipBtn) traumaFlipBtn.onclick = () => {
+      isTraumaCardFlipped = !isTraumaCardFlipped;
+      if (traumaFlashcards.length > 0) {
+        renderFlashcard(traumaFlashcards, traumaFlashIndex, 'trauma-flashcard-container');
+      }
+    };
+    if (traumaNextBtn) traumaNextBtn.onclick = () => {
+      traumaFlashIndex = (traumaFlashIndex + 1) % traumaFlashcards.length;
+      isTraumaCardFlipped = false; // Flip back to front for next card
+      if (traumaFlashcards.length > 0) {
+        renderFlashcard(traumaFlashcards, traumaFlashIndex, 'trauma-flashcard-container');
+      }
+    };
+}
+
 
 // Reusable function to render a flashcard
 function renderFlashcard(cardsArray, currentCardIndex, containerId) {
-  const card = cardsArray[currentCardIndex];
   const container = document.getElementById(containerId);
+  if (!container || cardsArray.length === 0) return; // Ensure container exists and there are cards
+
+  const card = cardsArray[currentCardIndex];
 
   // Determine if the card should be flipped based on its global state
   let shouldBeFlipped = false;
@@ -409,24 +591,9 @@ function renderFlashcard(cardsArray, currentCardIndex, containerId) {
   }
 }
 
-// General Flashcards Controls
-document.getElementById('general-flip-btn').onclick = () => {
-  isGeneralCardFlipped = !isGeneralCardFlipped;
-  renderFlashcard(generalFlashcards, generalFlashIndex, 'general-flashcard-container');
-};
-document.getElementById('general-next-btn').onclick = () => {
-  generalFlashIndex = (generalFlashIndex + 1) % generalFlashcards.length;
-  isGeneralCardFlipped = false; // Flip back to front for next card
-  renderFlashcard(generalFlashcards, generalFlashIndex, 'general-flashcard-container');
-};
-
-// Trauma Flashcards Controls
-document.getElementById('trauma-flip-btn').onclick = () => {
-  isTraumaCardFlipped = !isTraumaCardFlipped;
-  renderFlashcard(traumaFlashcards, traumaFlashIndex, 'trauma-flashcard-container');
-};
-document.getElementById('trauma-next-btn').onclick = () => {
-  traumaFlashIndex = (traumaFlashIndex + 1) % traumaFlashcards.length;
-  isTraumaCardFlipped = false; // Flip back to front for next card
-  renderFlashcard(traumaFlashcards, traumaFlashIndex, 'trauma-flashcard-container');
-};
+// --- Initialize the App after the DOM is fully loaded ---
+document.addEventListener('DOMContentLoaded', () => {
+    setupNavigation();
+    setupQuiz();
+    setupFlashcards();
+});
