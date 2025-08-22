@@ -1,13 +1,13 @@
 // --- Data Definitions ---
 // Quiz Data (Trauma Exam)
-const exams = [{
+const exams = [{ // Corrected: Removed extra closing bracket here
   id: "trauma",
   title: "Trauma",
   questions: [
     { question: "What is the definition of 'Trauma'?", options: ["Any injury caused by a fall", "Acute physiological/structural change from external energy", "Minor injury", "Psychological distress"], correctAnswerIndex: 1 },
     { question: "How is 'Major Trauma' defined?", options: ["Minor injury", "Life-threatening but not life-changing", "Life-threatening and possibly life-changing", "RTC injury"], correctAnswerIndex: 2 },
     { question: "What is MOI concerned with?", options: ["Medical history", "Transfer of energy", "Time since injury", "Emotional impact"], correctAnswerIndex: 1 },
-    { question: "What is the definition of 'Trauma' according to the provided materials?", options: ["Any injury caused by a fall from height.", "The acute physiological and structural change that occurs in a patient’s body when an external source of energy transfers to the body faster than the body’s ability to sustain and dissipate it.", "A minor injury that does not require hospital admission.", "A psychological response to a distressing event."], correctAnswerIndex: 1 },
+    { question: "What is the definition of 'Trauma' according to the provided materials?", options: ["Any injury caused by a fall from height.", "The acute physiological and structural change that occurs in a patient’s body when an external source of energy transfers to the body faster than the body’s ability to sustain and dissipate it.", "A minor injury that does not requires hospital admission.", "A psychological response to a distressing event."], correctAnswerIndex: 1 },
     { question: "How is 'Major Trauma' defined?", options: ["An injury requiring only basic first aid.", "An injury that is life-threatening but not life-changing.", "An injury or combination of injuries that are life-threatening and could be life changing because it may result in long-term disability.", "Any injury sustained in a road traffic collision."], correctAnswerIndex: 2 },
     { question: "Which of the following is NOT listed as a leading cause of trauma in the provided documents?", options: ["Road Traffic Collisions (RTC)", "Falls in people over the age of 75", "Work-related accidents", "Sports injuries in children"], correctAnswerIndex: 3 },
     { question: "What is the primary concern of 'Mechanism of Injury (MOI)'?", options: ["The patient's medical history.", "The sum of all physical forces that result in the patient's injury, primarily concerned with the transfer of energy.", "The time elapsed since the injury occurred.", "The emotional impact of the injury on the patient."], correctAnswerIndex: 1 },
@@ -82,10 +82,10 @@ const exams = [{
     { question: "Crush syndrome definition?", options: ["Minor bruising.", "Systemic effects of muscle crush releasing toxins (myoglobin, K+).", "Fracture of a bone.", "Nerve damage only."], correctAnswerIndex: 1 },
     { question: "Main electrolyte disturbance crush syndrome?", options: ["Hypokalaemia.", "Hypernatraemia.", "Hyperkalaemia.", "Hypocalcaemia."], correctAnswerIndex: 2 },
     { question: "First sign of compartment syndrome?", options: ["Swelling.", "Pain out of proportion to injury.", "Numbness.", "Weakness."], correctAnswerIndex: 1 },
-    { question: "5 Ps of compartment syndrome?", options: ["Pain, Pallor, Pulselessness, Paraesthesia, Paralysis.", "Pain, Pustules, Purple, Puffiness, Pressure.", "Pruritus, Palpitations, Perspiration, Paralysis, Pallor.", "Pneumonia, Pleurisy, Pericarditis, Pancreatitis, Pyelonephritis."], correctAnswerIndex: 0 },
+    { question: "5 Ps of compartment syndrome?", options: ["Pain, Pallor, Pulselessness, Paraesthesia, Paralysis.", "Pain, Pustules", "Purple", "Puffiness", "Pressure."], correctAnswerIndex: 0 },
     { question: "Spinal shock definition?", options: ["Permanent paralysis.", "Temporary loss of function/reflexes below injury (flaccid, areflexia).", "Psychological response to spinal injury.", "Only sensory loss."], correctAnswerIndex: 1 },
     { question: "Neurogenic shock cause?", options: ["Blood loss.", "Loss of sympathetic tone (SCI above T6).", "Heart failure.", "Infection."], correctAnswerIndex: 1 },
-    { question: "Neurogenic shock signs?", options: ["Hypotension, tachycardia, cold clammy skin.", "Hypotension, bradycardia, warm dry skin below injury.", "Hypertension, bradycardia, warm dry skin.", "Hypertension, tachycardia, cold clammy skin."], correctAnswerIndex: 1 },
+    { question: "Neurogenic shock signs?", options: ["Hypotension, tachycardia", "cold clammy skin.", "Hypotension", "bradycardia", "warm dry skin below injury."], correctAnswerIndex: 1 },
     { question: "Flail chest definition?", options: ["Single rib fracture.", "Fracture of sternum.", "≥2 adjacent ribs fractured in ≥2 places creating a free segment.", "Rib fracture with no displacement."], correctAnswerIndex: 2 },
     { question: "Flail chest main danger?", options: ["Minor discomfort.", "Paradoxical movement impairs ventilation.", "Bleeding only.", "Infection."], correctAnswerIndex: 1 },
     { question: "Open pneumothorax initial management?", options: ["Airtight dressing.", "3-sided occlusive dressing.", "Direct pressure.", "Chest compressions."], correctAnswerIndex: 1 },
@@ -107,7 +107,7 @@ const generalFlashcards = [
 ];
 
 // Trauma Flashcards Data (Full Set)
-const traumaFlashcards = [
+const traumaFlashcards = [ // Corrected: Removed extra closing bracket here
   { q: "What is the definition of 'Trauma'?", a: "Acute physiological/structural change when external energy > body’s ability to cope." },
   { q: "How is 'Major Trauma' defined?", a: "Life-threatening and could be life-changing with long-term disability." },
   { q: "Leading causes of trauma?", a: "RTCs, falls in >75s, work-related accidents. NOT sports injuries in children." },
@@ -131,11 +131,11 @@ const traumaFlashcards = [
   { q: "When start secondary survey?", a: "After life-threatening issues in primary survey addressed." },
   { q: "Head-to-toe mnemonic?", a: "DCAP-BTLS." },
   { q: "'M' in ATMIST?", a: "Mechanism of injury." },
-  { q: "Definition of Bleeding?", a: "Escape of blood from closed cardiovascular system." },
+  { q: "Definition of 'Bleeding'?", a: "Escape of blood from closed cardiovascular system." },
   { q: "Catastrophic Haemorrhage?", a: "Bleeding likely to cause death in minutes." },
   { q: "Arterial bleeding look?", a: "Bright red, spurting." },
   { q: "Outermost skin layer?", a: "Epidermis." },
-  { q: "Definition of Wound?", a: "Laceration/break in skin or mucous membrane with tissue damage." },
+  { q: "Definition of 'Wound'?", a: "Laceration/break in skin or mucous membrane with tissue damage." },
   { q: "Bruise type of wound?", a: "Contusion." },
   { q: "Common fracture <10yrs?", a: "Greenstick fracture." },
   { q: "Stage of healing with clot?", a: "Bleeding phase." },
@@ -151,7 +151,7 @@ const traumaFlashcards = [
   { q: "Secondary Intention healing?", a: "Wound left open, tissue grows from base." },
   { q: "Why keep trauma pts warm?", a: "Prevent hypothermia impairing clotting." },
   { q: "Scrape/graze wound type?", a: "Abrasion." },
-  { q: "Definition of Thermal Injury?", a: "Energy transferred from heat source causing tissue damage." },
+  { q: "Definition of 'Thermal Injury'?", a: "Energy transferred from heat source causing tissue damage." },
   { q: "Not type of thermal injury?", a: "Radiation poisoning." },
   { q: "Burn zone with necrosis?", a: "Zone of Coagulation." },
   { q: "Burn zone care-dependent outcome?", a: "Zone of Stasis." },
@@ -160,7 +160,7 @@ const traumaFlashcards = [
   { q: "Palm (with fingers) = what % TBSA?", a: "≈1%." },
   { q: "Superficial burn layer?", a: "Epidermis only." },
   { q: "Redness + clear blisters burn type?", a: "Superficial partial thickness (2nd degree)." },
-  { q: "Full thickness burn look?", a: "Stiff, white/brown, often painless." },
+  { q: "Deep dermal & Full thickness burn look?", a: "Stiff, white/brown, often painless." },
   { q: "Child burn referral > what % TBSA?", a: ">2%." },
   { q: "Burns always referred?", a: "All deep dermal & full thickness burns." },
   { q: "Cool burn how long?", a: "20 minutes tepid water." },
@@ -187,108 +187,7 @@ const traumaFlashcards = [
   { q: "Spinal shock definition?", a: "Temporary loss of function/reflexes below injury (flaccid, areflexia)." },
   { q: "Neurogenic shock cause?", a: "Loss of sympathetic tone (SCI above T6)." },
   { q: "Neurogenic shock signs?", a: "Hypotension, bradycardia, warm dry skin below injury." },
-  { q: "Flail chest definition?", a: "≥2 adjacent ribs fractured in ≥2 places creating a free segment." },
-  { q: "Flail chest main danger?", a: "Paradoxical movement impairs ventilation." },
-  { q: "Open pneumothorax initial management?", a: "3-sided occlusive dressing." },
-  { q: "Tension pneumothorax signs?", a: "Severe resp distress, tracheal deviation, absent breath sounds one side, hypotension." },
-  { q: "Needle decompression site?", a: "2nd ICS midclavicular or 5th ICS mid-axillary (14g cannula)." },
-  { q: "Massive haemothorax definition?", a: ">1500ml blood in pleural space." },
-  { q: "Beck’s triad (tamponade)?", a: "Hypotension, muffled heart sounds, JVP distension." },
-  { q: "Pelvic fracture initial management?", a: "Pelvic binder (over greater trochanters)." },
-  { q: "FAST scan used for?", a: "Detect free fluid (bleeding) in abdomen." },
-  { q: "Golden Hour trauma?", a: "First 60 minutes where rapid intervention improves survival." }
-]
-}];
-
-// General Flashcards Data
-const generalFlashcards = [
-  { q: "What is trauma?", a: "Physiological/structural change from energy transfer." },
-  { q: "Major trauma definition?", a: "Life-threatening or life-changing injury." },
-  { q: "MOI stands for?", a: "Mechanism of Injury." }
-];
-
-// Trauma Flashcards Data (Full Set)
-const traumaFlashcards = [
-  { q: "What is the definition of 'Trauma'?", a: "Acute physiological/structural change when external energy > body’s ability to cope." },
-  { q: "How is 'Major Trauma' defined?", a: "Life-threatening and could be life-changing with long-term disability." },
-  { q: "Leading causes of trauma?", a: "RTCs, falls in >75s, work-related accidents. NOT sports injuries in children." },
-  { q: "What is MOI concerned with?", a: "Sum of all physical forces and transfer of energy causing injury." },
-  { q: "Term for 'study of relationship between motion and forces'?", a: "Kinetics." },
-  { q: "What is 'Energy Transfer'?", a: "Energy relocated from one system to another (heat, work, mass transfer)." },
-  { q: "Why is MOI important?", a: "Helps predict extent/internal injuries, destination, immobilisation." },
-  { q: "What is Blunt Trauma?", a: "Usually serious injury caused by blunt object/surface (e.g. RTC, fall)." },
-  { q: "Example of Penetrating Trauma?", a: "Gunshot wound." },
-  { q: "Primary purpose of inclusive trauma system?", a: "Ensure patients go to most suitable hospital for injuries." },
-  { q: "Trauma network hospital category?", a: "Local Emergency Hospitals (plus MTCs & Trauma Units)." },
-  { q: "Why multi-disciplinary working?", a: "Share resources, manage scene, safety, comms, optimal care." },
-  { q: "What does 'S' in SCENE stand for?", a: "Safety (dynamic risk assessment, PPE)." },
-  { q: "Primary survey goal?", a: "Identify & address immediate threats to life." },
-  { q: "First step in CA<C>BCDE?", a: "Catastrophic Haemorrhage." },
-  { q: "Most rapid cause of death in trauma?", a: "Catastrophic Haemorrhage." },
-  { q: "Airway maneuver in suspected C-spine?", a: "Jaw thrust." },
-  { q: "'B' in CA<C>BCDE?", a: "Breathing." },
-  { q: "Not part of 'blood on floor +4 more'?", a: "Minor superficial lacerations." },
-  { q: "Lethal Triad of Trauma?", a: "Coagulopathy, Hypothermia, Acidosis." },
-  { q: "When start secondary survey?", a: "After life-threatening issues in primary survey addressed." },
-  { q: "Head-to-toe mnemonic?", a: "DCAP-BTLS." },
-  { q: "'M' in ATMIST?", a: "Mechanism of injury." },
-  { q: "Definition of Bleeding?", a: "Escape of blood from closed cardiovascular system." },
-  { q: "Catastrophic Haemorrhage?", a: "Bleeding likely to cause death in minutes." },
-  { q: "Arterial bleeding look?", a: "Bright red, spurting." },
-  { q: "Outermost skin layer?", a: "Epidermis." },
-  { q: "Definition of Wound?", a: "Laceration/break in skin or mucous membrane with tissue damage." },
-  { q: "Bruise type of wound?", a: "Contusion." },
-  { q: "Common fracture <10yrs?", a: "Greenstick fracture." },
-  { q: "Stage of healing with clot?", a: "Bleeding phase." },
-  { q: "Internal factor in wound formation?", a: "Diabetes." },
-  { q: "External factor in wound formation?", a: "Microorganisms." },
-  { q: "Advanced intervention bleeding/wounds?", a: "Tranexamic Acid (TXA)." },
-  { q: "Long bone fracture bleeding?", a: "Up to 2000ml." },
-  { q: "Pelvic binder placement?", a: "Over greater trochanter." },
-  { q: "Permissive Hypotension not allowed when?", a: "Isolated head injuries." },
-  { q: "Why maintain consciousness & radial pulse?", a: "Ensure organ perfusion." },
-  { q: "Function of traction splint femur?", a: "Reduce fracture + control bleeding." },
-  { q: "Complication of bleeding/wounds?", a: "Fat embolism." },
-  { q: "Secondary Intention healing?", a: "Wound left open, tissue grows from base." },
-  { q: "Why keep trauma pts warm?", a: "Prevent hypothermia impairing clotting." },
-  { q: "Scrape/graze wound type?", a: "Abrasion." },
-  { q: "Definition of Thermal Injury?", a: "Energy transferred from heat source causing tissue damage." },
-  { q: "Not type of thermal injury?", a: "Radiation poisoning." },
-  { q: "Burn zone with necrosis?", a: "Zone of Coagulation." },
-  { q: "Burn zone care-dependent outcome?", a: "Zone of Stasis." },
-  { q: "Burn capillary permeability?", a: "Increases." },
-  { q: "Best for children burn size?", a: "Lund & Browder chart." },
-  { q: "Palm (with fingers) = what % TBSA?", a: "≈1%." },
-  { q: "Superficial burn layer?", a: "Epidermis only." },
-  { q: "Redness + clear blisters burn type?", a: "Superficial partial thickness (2nd degree)." },
-  { q: "Full thickness burn look?", a: "Stiff, white/brown, often painless." },
-  { q: "Child burn referral > what % TBSA?", a: ">2%." },
-  { q: "Burns always referred?", a: "All deep dermal & full thickness burns." },
-  { q: "Cool burn how long?", a: "20 minutes tepid water." },
-  { q: "Why not ice burns?", a: "Causes hypothermia & tissue damage." },
-  { q: "Material to cover burn?", a: "Cling film (transparent, non-adherent, applied in layers not circumferentially)." },
-  { q: "When give high-flow O₂ in burns?", a: "If inhalation injury suspected." },
-  { q: "Inhalation injury signs?", a: "Soot in mouth/nose, singed nasal hairs, hoarseness, stridor, burns around face/neck." },
-  { q: "Best indicator of airway burn severity?", a: "Progressive hoarseness/stridor." },
-  { q: "Carbon monoxide poisoning suspect when?", a: "Patient from enclosed fire with headache, confusion, cherry-red skin." },
-  { q: "What does COHb do?", a: "Binds Hb stronger than O₂ → hypoxia." },
-  { q: "Management priority CO poisoning?", a: "High-flow O₂ (100%) non-rebreather mask." },
-  { q: "Electrical burn danger?", a: "Deep tissue damage, arrhythmias." },
-  { q: "Management electrical injury?", a: "Scene safety (switch off power), ECG monitoring, treat burns as thermal." },
-  { q: "Chemical burn initial management?", a: "Brush off dry chemical, irrigate copiously with water." },
-  { q: "Why not neutralise acid/alkali burns?", a: "Causes exothermic reaction and worsens injury." },
-  { q: "Primary blast injury affects?", a: "Air-filled organs (ears, lungs, GI tract)." },
-  { q: "Secondary blast injury caused by?", a: "Flying debris/shrapnel." },
-  { q: "Tertiary blast injury caused by?", a: "Patient being thrown (blunt trauma)." },
-  { q: "Quaternary blast injury?", a: "Burns, crush, inhalation, toxic exposure." },
-  { q: "Crush syndrome definition?", a: "Systemic effects of muscle crush releasing toxins (myoglobin, K+)." },
-  { q: "Main electrolyte disturbance crush syndrome?", a: "Hyperkalaemia." },
-  { q: "First sign of compartment syndrome?", a: "Pain out of proportion to injury." },
-  { q: "5 Ps of compartment syndrome?", a: "Pain, Pallor, Pulselessness, Paraesthesia, Paralysis." },
-  { q: "Spinal shock definition?", a: "Temporary loss of function/reflexes below injury (flaccid, areflexia)." },
-  { q: "Neurogenic shock cause?", a: "Loss of sympathetic tone (SCI above T6)." },
-  { q: "Neurogenic shock signs?", a: "Hypotension, bradycardia, warm dry skin below injury." },
-  { q: "Flail chest definition?", a: "≥2 adjacent ribs fractured in ≥2 places creating a free segment." },
+  { q: "Flail chest definition?", a: "≥2 adjacent ribs fractured in ≥2 places creating a free free segment.", "Rib fracture with no displacement."], correctAnswerIndex: 2 },
   { q: "Flail chest main danger?", a: "Paradoxical movement impairs ventilation." },
   { q: "Open pneumothorax initial management?", a: "3-sided occlusive dressing." },
   { q: "Tension pneumothorax signs?", a: "Severe resp distress, tracheal deviation, absent breath sounds one side, hypotension." },
@@ -350,9 +249,6 @@ function setupNavigation() {
             }
         })
     );
-
-    // Set initial section to Exams
-    showSection('exams-section');
 }
 
 
@@ -596,4 +492,10 @@ document.addEventListener('DOMContentLoaded', () => {
     setupNavigation();
     setupQuiz();
     setupFlashcards();
+    // After initial setup, show the exams section
+    document.querySelectorAll('section').forEach(s => s.classList.add('hidden'));
+    const examsSection = document.getElementById('exams-section');
+    if (examsSection) {
+        examsSection.classList.remove('hidden');
+    }
 });
